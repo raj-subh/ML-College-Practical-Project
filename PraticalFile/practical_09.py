@@ -63,3 +63,31 @@ print(classification_report(y_test, y_pred))
 # Confusion Matrix
 print("\n Confusion Matrix: ")
 print(confusion_matrix(y_test, y_pred))
+
+""" 
+✅ Summary of Important Methods
+Method	                           Purpose
+-----------------------------------------------------------------------------------------------------------------
+pd.read_csv("file.csv")	     ->     Load dataset into a Pandas DataFrame
+-----------------------------------------------------------------------------------------------------------------
+.shape	                     ->     Returns number of rows and columns
+-----------------------------------------------------------------------------------------------------------------
+.isnull().sum()	             ->     Checks for missing values
+-----------------------------------------------------------------------------------------------------------------
+train_test_split(X, y, test_size=0.2, stratify=y, random_state=42) ->	Splits dataset into training and testing sets
+-----------------------------------------------------------------------------------------------------------------
+StandardScaler().fit_transform(X_train)	              ->      Scales training data
+-----------------------------------------------------------------------------------------------------------------
+LogisticRegression(max_iter=500, solver="liblinear")  ->     Initializes logistic regression model
+-----------------------------------------------------------------------------------------------------------------
+model.fit(X_train_scaled, y_train)	                  ->      Trains logistic regression model
+-----------------------------------------------------------------------------------------------------------------
+model.predict(X_test_scaled)	                      ->      Predicts outcomes for test data
+-----------------------------------------------------------------------------------------------------------------
+accuracy_score(y_test, y_pred)	                      ->       Measures model accuracy
+-----------------------------------------------------------------------------------------------------------------
+classification_report(y_test, y_pred)	              ->      Shows precision, recall, and F1-score
+-----------------------------------------------------------------------------------------------------------------
+confusion_matrix(y_test, y_pred)	                  ->       Displays a matrix of true/false positives & negatives
+-----------------------------------------------------------------------------------------------------------------
+"""
